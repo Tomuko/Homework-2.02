@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-ka-D20">
-                                <rect key="frame" x="111" y="667" width="170" height="41"/>
+                                <rect key="frame" x="111" y="757" width="170" height="41"/>
                                 <color key="backgroundColor" red="0.76859849691390991" green="0.17021829591506393" blue="0.24149038580689247" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="o1n-pm-0TN"/>
@@ -31,26 +31,36 @@
                                     <action selector="trafficLightSwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nz-aQ-tFW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ABi-qZ-e2M">
-                                <rect key="frame" x="121" y="104" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Kj-WpP">
-                                <rect key="frame" x="121" y="262" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ufp-YE-U39">
-                                <rect key="frame" x="121" y="420" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="76j-vV-N7y">
+                                <rect key="frame" x="121.66666666666669" y="79" width="150" height="466"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABi-qZ-e2M">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCP-Kj-WpP">
+                                        <rect key="frame" x="0.0" y="158" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufp-YE-U39">
+                                        <rect key="frame" x="0.0" y="316" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="466" id="5xN-5d-8Nc"/>
+                                    <constraint firstAttribute="width" constant="150" id="CiX-yB-Yvr"/>
+                                    <constraint firstItem="SCP-Kj-WpP" firstAttribute="centerY" secondItem="76j-vV-N7y" secondAttribute="centerY" id="DUk-nm-5VI"/>
+                                    <constraint firstItem="SCP-Kj-WpP" firstAttribute="top" secondItem="76j-vV-N7y" secondAttribute="top" constant="158" id="YIS-g7-TiV"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ca6-ka-D20" secondAttribute="bottom" constant="110" id="giu-HJ-gET"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ca6-ka-D20" secondAttribute="bottom" constant="20" id="2J8-Ug-4MA"/>
+                            <constraint firstItem="76j-vV-N7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="E88-QW-qWC"/>
+                            <constraint firstItem="76j-vV-N7y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUV-HY-uaU"/>
                             <constraint firstItem="Ca6-ka-D20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="pEr-U0-cvt"/>
                         </constraints>
                     </view>
@@ -63,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="101.25" y="3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
