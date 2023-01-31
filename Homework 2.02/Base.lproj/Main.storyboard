@@ -28,7 +28,7 @@
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="trafficLightSwitch" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLe-v3-WMv"/>
+                                    <action selector="trafficLightSwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nz-aQ-tFW"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ABi-qZ-e2M">
@@ -57,7 +57,7 @@
                     <connections>
                         <outlet property="greenLight" destination="ufp-YE-U39" id="oGF-WM-kJ6"/>
                         <outlet property="redLight" destination="ABi-qZ-e2M" id="pYG-fC-Wsv"/>
-                        <outlet property="trafficLightButton" destination="Ca6-ka-D20" id="WPk-ai-SYG"/>
+                        <outlet property="trafficLightButton" destination="Ca6-ka-D20" id="ugA-Fu-SNs"/>
                         <outlet property="yellowLight" destination="SCP-Kj-WpP" id="wsC-O8-V1F"/>
                     </connections>
                 </viewController>
